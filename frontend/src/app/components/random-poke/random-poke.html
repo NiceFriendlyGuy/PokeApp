@@ -1,0 +1,16 @@
+<div class="random-poke">
+    
+    @defer{
+        @if (pokeDetailResource.value()?.sprites?.front_default) {
+            <img [src]="pokeDetailResource.value()?.sprites?.front_default" />
+        }
+    }
+    <p>ID: {{ pokeDetailResource.value()?.id }}</p>
+    <p>{{ pokeDetailResource.value()?.name }}</p>
+    <p [class]="'type-' + pokeDetailResource.value()?.types?.[0]?.type?.name">
+        {{ pokeDetailResource.value()?.types?.[0]?.type?.name | json }}
+    </p>
+
+    <button (click) = "randomizeId()">New Random</button>
+
+</div>

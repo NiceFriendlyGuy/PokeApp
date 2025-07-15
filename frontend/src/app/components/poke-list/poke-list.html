@@ -1,0 +1,9 @@
+<!--<pre>{{ pokeResource.value() | json }}</pre>-->
+<ul>
+    @for (poke of pokeResource.value()?.results; track $index) {
+    <li>
+        <p>ID: {{getPokeId(poke.url)}}</p> 
+        <button [routerLink]="['/', getPokeId(poke.url)]">{{ poke.name }}</button>
+    </li>
+    }
+</ul>
