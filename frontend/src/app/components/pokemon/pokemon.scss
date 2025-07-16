@@ -1,13 +1,18 @@
 @use '../../common/styles/types.scss';
 
-
 .poke-detail{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('/assets/images/pokedex.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 195px;
+    padding-bottom: 175px;
+    padding-top: 100px;
 
     p{
-        margin: 0.5rem;
+        margin: 0.25rem;
     }
 }
-
