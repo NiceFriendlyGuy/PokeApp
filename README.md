@@ -26,7 +26,7 @@ This project is meant as an **exercise in using Angular 20 signals** and applyin
 ```bash
 # Clone the repository
 git clone https://github.com/NiceFriendlyGuy/PokeApp.git
-cd angular-pokemon-exercise
+cd PokeApp
 
 # Install dependencies
 npm install
